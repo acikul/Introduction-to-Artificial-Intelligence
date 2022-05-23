@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh27380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs60 \cf0 b - prosjecni faktor grananja\
+d - dubina/razina\
+\
+BFS 	-slo\'9eenost: b 
+\f1\i na
+\f0\i0  d+1 ili d      (s visited min(b na d+1, b x |S|))\
+			-optimalan, potpun\
+\
+DFS 	- nije optimalan!\
+			-ako graf stanja ima ciklus - \ul nije potpun\ulnone  jer ode beskonacno u dubinu\
+			-prostorna: b 
+\f1\i x
+\f0\i0  m\
+			-vremenska: b 
+\f1\i na
+\f0\i0  m\
+\
+			-\ul bolja verzija:\ulnone  iterativno u dubinu - odrezano i svaku iteraciju ide razinu dublje\
+												-prostorna: b 
+\f1\i x
+\f0\i0  d\
+												-vremenska: b 
+\f1\i na
+\f0\i0  d\
+UCS	-potpun\
+			-optimalan ako nema negativnih cijena prijelaza\
+			-slo\'9eenost: b 
+\f1\i na 
+\f0\i0 (1+ 
+\f1\i floor
+\f0\i0 (C*/epsilon))\
+\
+HEURISTIKE\
+			-optimisticna: nikad ne precjenjuje, ne povlaci konzistentost\
+			-konzistentna: ukupna procjenjena cijena monotono raste\
+										hi <= hj + c(i,j)\
+										hi-hj <= c(i,j)\
+										-povlaci optimalnost - krenemo od kraja i onda unazad svako je manje od 										 zbroja c-ova\
+A*		-potpun\
+			-optimalan, ako je heuristika optimisticna\
+								, (ciklusi)uz listu closed mora bit konzistentna\
+								,pro\'9airit ce sve cvorove s uk proc cijenom manjom od C*\
+			-slo\'9eenost: min (b na d+1, b*|S|)\
+\
+\
+\
+			\
+			\
+			}
