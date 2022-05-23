@@ -1,0 +1,79 @@
+ISPRAVNOST 
+	-	ako primjenimo pravilo zaključivanja na 
+		skup premisa izvest ce se formula koja
+		je logička posljedica tih premisa - tako
+		dobivamo da pravilo ne izvodi bedastoće 
+		koje nisu semantički ispravne
+	-	posljedica rezolucijskog pravila je ujedno
+		i logička posljedica
+
+
+POTPUNOST 
+	-	skup pravila potpun aKKo je njime moguće
+		izvesti sve logičke posljedice - ako je nesto 
+		logicka posljedica tih premisa onda imamo
+		pravilo kojim je to moguće izvesti iz tih premisa
+
+	-	ako bas nesto trebamo pustit rade pustamo potpunost
+
+	-	POTPUNOST REZOLUCIJSKE STRATEGIJE mora izvesti NIL iz
+		nekonzistentnog skupa klauzula
+
+	-	za algoritam znaci da uvijek pronalazi rjesenje kada ono postoji
+
+
+ODLUČIVOST
+	-	za svaku formulu F daje da ako je valjana i ne ako nije
+	-	u PL i FOL rezolucija opovrgavanjem ispravna i potpuna, ali
+		FOL nije odlučiva (ako je valjana to će dati da, ali ako ne
+		može nikada ne završiti) (ako G log posljedica izvest će NIL,
+		ali ako nije može nikada ne završiti)
+
+
+CNF
+	1.	uklanjanje ekvivalencije
+	2.	uklanjanje implikacije
+	3.	potiskivanje negacije do atoma
+	4.	primjena distributivnosti
+
+
+REZOLUCIJA
+	-	izravna pokušava iz premisa izvest cilj 
+			-ispravna, ali nepotpuna
+	-	opovrgavanjem pokušava dokazati da su 
+		premise i negirani cilj nekonzistentne
+			-ispravna i potpuna!
+
+	-	NIL prazna klauzula čija je sematička vrijednost laž
+	-	FAKTORIZACIJA G v G => G
+
+
+STRATEGIJE POJEDNOSTAVLJENJA/BRISANJA
+		-	uklanjanje redundantnih/pokrivenih drugom klauzulom
+		-	uklanjanje nevažnih/tautologija
+
+
+UPRAVLJAČKE STRATEGIJE
+	SKUP POTPORE
+		-	pretpostavka da su premise konzistente/da
+		 	nisu kontradikcija - kombe nece dat NIL
+		-	negacija cilja i sve izvedene
+		-	kod izvođenja komba barem jedne odavde
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
